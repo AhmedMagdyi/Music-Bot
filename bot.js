@@ -9,7 +9,7 @@ const YouTube = require('simple-youtube-api');
 const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
 const queue = new Map();
 const UserBlocked = new Set();
-const prefix = '*'
+const prefix = '%'
 
  client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -50,8 +50,8 @@ if (message.content.startsWith(adminprefix + 'tw')) {
  
 
 client.on("message", message => {
-  var prefix = "*";
-if (message.content === "*mhelp") {
+  var prefix = "%";
+if (message.content === "%help") {
    message.channel.send('**تم ارسالك في الخاص** :mailbox_with_mail: ');
 const embed = new Discord.RichEmbed()
     .setDescription(`
