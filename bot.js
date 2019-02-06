@@ -9,11 +9,11 @@ const YouTube = require('simple-youtube-api');
 const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
 const queue = new Map();
 const UserBlocked = new Set();
-const prefix = '%'
+const prefix = '1'
 
  client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setActivity("GMZN Host | %play", {type: 'PLAYING'});
+  client.user.setActivity("GMZN Host | 1play", {type: 'PLAYING'});
 });
  
  
@@ -50,30 +50,30 @@ if (message.content.startsWith(adminprefix + 'tw')) {
 //-------------------------------------------------------------نهاية السورس الاساسي--------------------------------------------------------------------------------------------------------------
  
 
-client.on("message", message => {
-  var prefix = "%";
-if (message.content === "%help") {
-   message.channel.send('**تم ارسالك في الخاص** :mailbox_with_mail: ');
-const embed = new Discord.RichEmbed()
-    .setDescription(`
-   [❖═══════ اوامر اغاني═══════❖]
+//client.on("message", message => {
+  //var prefix = "%";
+//if (message.content === "%help") {
+  // message.channel.send('**تم ارسالك في الخاص** :mailbox_with_mail: ');
+//const embed = new Discord.RichEmbed()
+  //  .setDescription(`
+   //[❖═══════ اوامر اغاني═══════❖]
 
-** *play ~ لتشغيل الاغنيه**
+//** *play ~ لتشغيل الاغنيه**
 
-** *stop ~ لأيقاف الاغنيه**
+//** *stop ~ لأيقاف الاغنيه**
 
-** *skip ~ لتخطي الاغنيه**
+//** *skip ~ لتخطي الاغنيه**
 
-** *vol <namber> ~ ل تعلية واخفاض صوت الاغنيه**
+//** *vol <namber> ~ ل تعلية واخفاض صوت الاغنيه**
 
-** *pause ~ لأيقاف الاغنيه موقتا**
+//** *pause ~ لأيقاف الاغنيه موقتا**
 
-** *resume ~ لأستمرار الاغنيه**
-`)
- message.author.sendEmbed(embed)
+//** *resume ~ لأستمرار الاغنيه**
+//`)
+ //message.author.sendEmbed(embed)
  
- }
- });
+ //}
+ //});
 
 
 //--------------------------------------------------------
